@@ -30,7 +30,7 @@ cv = st.slider("Coefficient of Variation (CV %)", min_value=3, max_value=90, val
 
 # Error or Soil Cores slider based on mode
 if mode == "Calculate Number of Soil Cores":
-    error = st.slider("Error (%)", min_value=5, max_value=50, value=10, step=1)
+    error = st.slider("Error (%)", min_value=1, max_value=50, value=10, step=1)
     st.write(f"Selected Error: {error}%")
 else:
     soil_cores = st.slider("Number of Soil Cores", min_value=0, max_value=1000, value=20, step=1)
