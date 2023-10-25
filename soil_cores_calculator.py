@@ -41,7 +41,7 @@ if st.button("Calculate"):
     if mode == "Calculate Number of Soil Cores":
         calculated_cores = final_power_function(error, cv)
         st.session_state.calc_data.append(("Soil Cores", error, cv, calculated_cores))
-        st.write(f'<p style="color:green;font-weight:bold;">Calculated Number of Soil Cores: {calculated_cores:.0f}%</p>',unsafe_allow_html=True)
+        st.write(f'<p style="color:green;font-weight:bold;">Calculated Number of Soil Cores: {calculated_cores:.0f}</p>',unsafe_allow_html=True)
     else:
         # Calculate Error by inverting the power function
         a = polynomial_function(cv)
